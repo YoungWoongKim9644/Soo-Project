@@ -16,6 +16,12 @@ public class SignUp {
 		point = sc.nextInt();
 		System.out.println("회원 성별 [M/F]");
 		sex = sc.next().charAt(0);
+		while(!(sex == 'M' || sex == 'm' || sex == 'f' || sex == 'F'))
+			{
+			System.out.println("성별은 M 또는 F만 입력할 수 있습니다.");
+			sex = sc.next().charAt(0);
+			}
+		
 		System.out.println("회원 번호");
 		number = sc.nextInt();
 		
