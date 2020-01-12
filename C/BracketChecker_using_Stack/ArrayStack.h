@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_STACK_SIZE	100
-#define LEFT_BRACkETS ("{"||"["||"(")
-#define RIGHT_BRACkETS ("}"||"]"||")")
+#define LEFT_BRACkETS ('{'||'['||'(')
+#define RIGHT_BRACkETS ('}'||']'||')')
 
 
 #define Element	char

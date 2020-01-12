@@ -77,4 +77,3 @@ void display ( Stack* s, char* msg ) {
 		printElem(s->data[i]);
 	printf("\n");
 }
-//{
