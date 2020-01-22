@@ -1,0 +1,74 @@
+-- 2020-01-08
+-- DATABASE QUERY PRACTICE
+
+-- CREATE TABLE
+CREATE TABLE CUSTOMER_TABLE( 데이터 만들기 우리가 사용하는 자료형은 varchar2(크기)를 자주 사용)
+    CUSTOMER_NO     VARCHAR2(15) PRIMARY KEY, 프라이머리 키는 한테이블에 무조건 하나는 있어야돼
+    CUSTOMER_NAME   VARCHAR2(15),
+    PASSWD          VARCHAR2(64),
+    PHONE_NUM       VARCHAR2(15),
+    GENDER          VARCHAR2(5),
+    POINT_          NUMBER
+);
+
+-- DROP TABLE
+DROP TABLE CUSTOMER_TABLE;
+
+-- LOOKUP TABLE
+SELECT * FROM CUSTOMER_TABLE;
+
+-- LOOKUP SPECIFIC COLUMN OF TABLE
+SELECT CUSTOMER_NO FROM CUSTOMER_TABLE;
+
+-- INSERT INTO TABLE
+INSERT INTO CUSTOMER_TABLE VALUES(
+    'CUSTOMER_NAME',
+    'PASSWD',
+    'PHONE_NUM',
+    'GENDER',
+    0 -- POIN_
+);
+
+-- UPDATE INFO
+UPDATE CUSTOMER_TABLE SET CUSTOMER_NO = '2014707088' WHERE CUSTOMER_NO = '2014707073';
+UPDATE CUSTOMER_TABLE SET PASSWD = 'DWEREWRT' WHERE CUSTOMER_NO = '2014707087';
+UPDATE CUSTOMER_TABLE SET CUSTOMER_NAME = 'KIM-SOO-HWAB' WHERE CUSTOMER_NO = 2014707073;
+
+-- DELETE
+DELETE CUSTOMER_TABLE WHERE CUSTOMER_NO = 2014707087;
+
+-- LOOKUP ADMIN_LIST TABLE
+SELECT * FROM ADMIN_LIST;
+
+-- COMMIT
+COMMIT;
+
+ctrl 엔터를 누르면 라인바이라인으로 실행됌
+드랍 테이블 : 테이블을 삭제하고 싶어요
+commit 수정사항 저장 이거 안적으면 수정 적용 안됌
+
+++++++++++++++++++++++++++++++++++++++++++
+이번주: 고객관리프로그램 데이터베이스 연동
+서버 <-> 클라이언트로
+
+클라이언트  : 하나의 프로그램 => 데이터베이스 관련 처리들 => 예가 안해 => 처리해달라는거는 서버로 요청
+서버 : 클라이언트가 연결 요청을 할때마다 스레드를 하나 만들어서 서로 연결을 해
+=> 이 연결한 놈은 클라이언트가 요청을 할 때마다 데이터베이스가 관련 처리를 하는거야.
+
+
+
+
+
+
+원형 큐에서 하나를 비워둔 이유
+-> 큐가 얼마나 채워져있는지를 확인하는 변수를 생성하면 전부 사용할 수 있지만,
+연산량이 짱짱 늘어난다. 따라서 원형 큐에서 한칸을 제외한다.
+
+r = (r+1)%size 
+이렇게 해야 rear이 원형으로 돌아다닌다. ->
+
+스택에서 
+
+과제---------------------------------------------------------------------
+괄호 검사
+고객관리 데이터베이스 깔아서 해보기 
