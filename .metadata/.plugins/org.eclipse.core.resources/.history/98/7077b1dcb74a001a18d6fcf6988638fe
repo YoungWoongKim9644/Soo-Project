@@ -1,0 +1,145 @@
+package SenderAndReceiver;
+import java.util.*;
+
+
+public class  Packet implements java.io.Serializable, MainMenu{
+
+	private String sentence;
+	private String name;
+	private String adminID;
+	private String adminPW;
+	private String number;
+	private char gender;
+	private int point;
+	private int menuNo;
+	private String newInfo;
+	private boolean bool;
+	private boolean islogin;
+	private String error;
+	private Object[] array = new Object[11];
+	
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		array[ERRORNUM]=error;
+		this.error = error;
+	}
+
+	
+	
+	
+	public Object[] getArray() {
+		return array;
+	}
+
+	public void setArray(Object[] array) {
+		this.array = array;
+	}
+
+	public String getNewInfo() {
+		return newInfo;
+	}
+
+	public boolean isIslogin() {
+		return islogin;
+	}
+
+	public void setIslogin(boolean islogin) {
+		array[ISLOGIN]= islogin;
+		this.islogin = islogin;
+	}
+
+	
+	public void setSentence(String sentence) {
+		array[SENTENCE]=sentence;
+		this.sentence = sentence;
+	}
+
+	public void setName(String name) {
+		array[NAME]=name;
+		this.name = name;
+	}
+
+	public void setAdminID(String adminID) {
+		array[ADMINID] = adminID;
+		this.adminID = adminID;
+	}
+
+	public void setAdminPW(String adminPW) {
+		array[ADMINPW]=adminPW;
+		this.adminPW = adminPW;
+	}
+
+	public void setNumber(String number) {
+		array[NUMBER]=number;
+		this.number = number;
+	}
+
+	public void setGender(char gender) {
+		array[GENDER]=gender;
+		this.gender = gender;
+	}
+
+	public void setPoint(int point) {
+		array[POINT]=point;
+		this.point = point;
+	}
+
+	public void setMenuNo(int menuNo) {
+		array[MENU]= menuNo;
+		this.menuNo = menuNo;
+	}
+
+	public void setNewInfo(String newInfo) {
+		array[NEWINFO]=newInfo;
+		this.newInfo = newInfo;
+	}
+
+	public void setBool(boolean bool) {
+		array[BOOL]=bool;
+		this.bool = bool;
+	}
+
+	public boolean Islogin() {
+		return islogin;
+	}
+
+	public String getSentence() {
+		return sentence;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAdminID() {
+		return adminID;
+	}
+
+	public String getAdminPW() {
+		return adminPW;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public int getMenuNo() {
+		return menuNo;
+	}
+
+	public boolean isBool() {
+		return bool;
+	}
+
+}

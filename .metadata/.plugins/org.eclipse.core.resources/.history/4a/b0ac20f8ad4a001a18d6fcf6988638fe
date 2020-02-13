@@ -1,0 +1,144 @@
+package SenderAndReceiver;
+import java.util.*;
+
+
+public class  Packet implements java.io.Serializable, MainMenu{
+
+	private String sentence;
+	private String name;
+	private String adminID;
+	private String adminPW;
+	private String number;
+	private char gender;
+	private int point;
+	private int menuNo;
+	private String newInfo;
+	private boolean bool;
+	private boolean islogin;
+	private String error = null;
+	
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		arrayList.add(ERRORNUM, error);
+		this.error = error;
+	}
+
+	private ArrayList<Object> arrayList = new ArrayList<>();
+	
+	
+	public ArrayList<Object> getArrayList() {
+		return arrayList;
+	}
+
+	public void setArrayList(ArrayList<Object> arrayList) {
+		this.arrayList = arrayList;
+	}
+
+	public String getNewInfo() {
+		return newInfo;
+	}
+
+	public boolean isIslogin() {
+		return islogin;
+	}
+
+	public void setIslogin(boolean islogin) {
+		arrayList.add(ISLOGIN, islogin);
+		this.islogin = islogin;
+	}
+
+	
+	public void setSentence(String sentence) {
+		arrayList.add(SENTENCE,sentence);
+		this.sentence = sentence;
+	}
+
+	public void setName(String name) {
+		arrayList.add(NAME,name);
+		this.name = name;
+	}
+
+	public void setAdminID(String adminID) {
+		arrayList.add(ADMINID,adminID);
+		this.adminID = adminID;
+	}
+
+	public void setAdminPW(String adminPW) {
+		arrayList.add(ADMINPW,adminPW);
+		this.adminPW = adminPW;
+	}
+
+	public void setNumber(String number) {
+		arrayList.add(NUMBER,number);
+		this.number = number;
+	}
+
+	public void setGender(char gender) {
+		arrayList.add(GENDER,gender);
+		this.gender = gender;
+	}
+
+	public void setPoint(int point) {
+		arrayList.add(POINT,point);
+		this.point = point;
+	}
+
+	public void setMenuNo(int menuNo) {
+		arrayList.add(MENU, menuNo);
+		this.menuNo = menuNo;
+	}
+
+	public void setNewInfo(String newInfo) {
+		arrayList.add(NEWINFO, newInfo);
+		this.newInfo = newInfo;
+	}
+
+	public void setBool(boolean bool) {
+		arrayList.add(BOOL, bool);
+		this.bool = bool;
+	}
+
+	public boolean Islogin() {
+		return islogin;
+	}
+
+	public String getSentence() {
+		return sentence;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAdminID() {
+		return adminID;
+	}
+
+	public String getAdminPW() {
+		return adminPW;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public int getMenuNo() {
+		return menuNo;
+	}
+
+	public boolean isBool() {
+		return bool;
+	}
+
+}

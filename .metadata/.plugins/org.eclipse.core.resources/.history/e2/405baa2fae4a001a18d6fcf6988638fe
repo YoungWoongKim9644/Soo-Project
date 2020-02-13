@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class exam {
+	private ArrayList<Object> arrayList = new ArrayList<>();
+	
+	public void exam1() {
+		arrayList.add(2, 3);
+		System.out.println("size : " + arrayList.size());
+	}
+}

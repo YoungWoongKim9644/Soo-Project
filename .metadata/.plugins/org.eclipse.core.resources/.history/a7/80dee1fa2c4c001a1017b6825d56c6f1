@@ -1,0 +1,65 @@
+package SenderAndReceiver;
+
+public class AccountPacket implements java.io.Serializable, MainMenu {
+	
+	private String adminID;
+	private String adminPW;
+	private boolean islogin;
+	private String error;
+	private boolean errorExist;
+	
+	
+	public AccountPacket(){
+		this.adminID = null;
+		this.adminPW = null;
+		this.islogin = false;
+		this.error = null;
+		this.errorExist = false;
+	}
+	
+	public boolean isErrorExist() {
+		return errorExist;
+	}
+
+	public void setErrorExist(boolean errorExist) {
+		this.errorExist = errorExist;
+	}
+
+	public String getAdminID() {
+		return adminID;
+	}
+
+	public String getAdminPW() {
+		return adminPW;
+	}
+	
+	public boolean isIslogin() {
+		return islogin;
+	}
+
+	public void setIslogin(boolean islogin) {
+		this.islogin = islogin;
+	}
+	
+
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		this.error = error;
+	}
+	
+	public void setAdminID(String adminID) {
+		this.adminID = adminID;
+	}
+
+	public void setAdminPW(String adminPW) {
+		this.adminPW = adminPW;
+	}
+	
+	public boolean Islogin() {
+		return islogin;
+	}
+
+}

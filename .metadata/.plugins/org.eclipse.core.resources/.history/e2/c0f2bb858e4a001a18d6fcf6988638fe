@@ -1,0 +1,11 @@
+
+public class dddd {
+	 sdasfa cc;
+	public dddd( sdasfa cc){
+		this.cc = cc;
+	}
+	
+	public void example() {
+		System.out.println("num:" +cc.getNum1());
+	}
+}

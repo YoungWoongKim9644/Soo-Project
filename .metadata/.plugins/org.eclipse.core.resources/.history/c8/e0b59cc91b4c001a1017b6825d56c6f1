@@ -1,0 +1,5 @@
+package SenderAndReceiver;
+
+public class AccountPacket {
+
+}

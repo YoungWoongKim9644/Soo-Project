@@ -1,0 +1,11 @@
+
+public class ddd {
+	public static void main(String[] args) {
+		
+		 sdasfa cc = new  sdasfa();
+		 cc.setNum1(1);
+		 dddd kk = new dddd(cc);
+		 kk.example();
+		 System.out.println(cc.getNum1());
+	}
+}
