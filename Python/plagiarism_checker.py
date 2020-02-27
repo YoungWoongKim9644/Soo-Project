@@ -66,8 +66,8 @@ def sublist(plg_sentences, tmp):
 
 
 
-f = open(r"C:\Users\COMS02\.spyder-py3\test1.txt",'rt', encoding='UTF8')
-f_test = open(r"C:\Users\COMS02\.spyder-py3\test2.txt",'rt', encoding='UTF8')
+f = open(r"C:\Users\duddn\OneDrive - 광운대학교\바탕 화면\PJ_SOO\Soo-Project\Python\d1.txt",'rt', encoding='UTF8')
+f_test = open(r"C:\Users\duddn\OneDrive - 광운대학교\바탕 화면\PJ_SOO\Soo-Project\Python\d2.txt",'rt', encoding='UTF8')
 read = f.read()
 read_test = f_test.read()
 #split = read.split('\W+')
